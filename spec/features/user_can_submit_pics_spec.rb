@@ -2,6 +2,14 @@ require 'rails_helper'
 
 RSpec.feature "View pictures", type: :feature do
 
+    it "User can sign up" do
+    visit "/users/sign_up"
+    fill_in "", with: ""
+    fill_in "", with: ""
+    click_button 'sign_up'
+    expect(page).to have_content("")
+  end
+
   pending "Can submit pictures and view them" do
     visit "/pics/new"
     fill_in "pic_title", with: "testtitle1"
