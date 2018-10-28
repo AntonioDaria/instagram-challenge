@@ -19,15 +19,19 @@ RSpec.feature "View pictures", type: :feature do
   end
 
   pending "Can check that the newest pics appears first" do
-    visit "/pics/new"
+    visit "/users/sign_up"
+    fill_in "user_email", with: "user@gmail.com"
+    fill_in "user_password", with: "userpassword"
+    fill_in "user_password_confirmation", with: "userpasswordconfirmation"
+    click_button 'sign_up'
+    click_link "gram-it"
     fill_in "pic_title", with: "testtitle1"
     fill_in "pic_description", with: "testdescription1"
     click_button 'btn btn-info'
-    visit "/pic/new"
     fill_in "pic_title", with: "testtitle2"
     fill_in "pic_description", with: "testdescription2"
     click_button 'btn btn-info'
-    expect(page).to have_content("testtitle1 " + " " + "testtitle2")
+    expect(page).to have_content("testtitle2 " + " " + "testtitle1")
  end
 
 end
