@@ -1,24 +1,23 @@
+
 # README
+Building instagram using Rails!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The application hasn't been TDD'ed, but it is my intention to keep working on it. My goal for this weekend challenge was to understand rails better and how the MVC pattern unfolds within rails.I also wanted to practice with CSS and HTML/HAML and I really happy with the outcome.
 
-Things you may want to cover:
+## How to use
 
-* Ruby version
+1. clone this repo
+2. move into the folder and run `bundle install`
+3. create the databases using `db:create` / migrate the databases using `bin/rails db:migrate`
+4. start your server with the command `bin/rails s`
+5. visit localhost:3000
+6. sign up to your own account
 
-* System dependencies
+## Current Features
 
-* Configuration
+- The application allows users to create a personal account signin/out, created using Devise gem.
+- Users can post pictures and a description which was implemented using 'paperclip' gem
+- Users can see own pictures and can delete them
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Yet to implement
+- Write Tests!
