@@ -2,7 +2,7 @@
 # README
 Building instagram using Rails!
 
-The application hasn't been TDD'ed, but it is my intention to keep working on it. My goal for this weekend challenge was to understand rails better and how the MVC pattern unfolds within rails.I also wanted to practice with CSS and HTML/HAML and I really happy with the outcome.
+The application hasn't been TDD'ed, but it is my intention to keep working on it. My goal for this weekend challenge was to understand rails better and how the MVC pattern unfolds within rails.I also wanted to practice with CSS and HTML/HAML and I am really happy with the outcome.
 
 ## How to use
 
